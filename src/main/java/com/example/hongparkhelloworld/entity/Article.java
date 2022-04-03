@@ -2,6 +2,7 @@ package com.example.hongparkhelloworld.entity;
 
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -14,6 +15,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor // 파라미터 없는 디폴트 생성자 추가!
 @ToString
+@Getter
 public class Article {
 
     @Id // // 주민번호 같은 것
@@ -25,6 +27,7 @@ public class Article {
 
     @Column
     private String content;
+
 
 //    public Article(Long id, String title, String content) {
 //        this.id = id;
